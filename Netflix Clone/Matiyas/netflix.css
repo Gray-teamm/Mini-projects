@@ -220,3 +220,147 @@ nav button:hover {
     position: absolute;
     border-radius:5px;
 }
+
+.faq {
+    margin-top: 30px;
+    padding: 5% 8%;
+    font-size: 18px;
+    text-align: left;
+}
+
+.faq h3 {
+    font-weight: 550;
+    font-size: 27px;
+}
+
+
+.accordion {
+    margin: 13px;
+    width: 100%;
+    max-width: 990px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion label {
+    display: flex;
+    text-align: center;
+    font-size: 29px;
+    padding: 24px 12px;
+    font-weight: 500px;
+    background: #303030;
+    border-bottom: 1px solid #000;
+    position: relative;
+    cursor: pointer;
+}
+.accordion label:hover {
+    background: #484848;
+}
+.accordion label::after {
+    content: '+';
+    font-size: 39px;
+    font-weight: 200;
+    right: 12px;
+    position: absolute;
+    padding-bottom: 2px;
+    transition: transform 0.5s;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0px 12px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.accordion input[type="radio"]:checked +label +.content {
+    max-height: 400px;
+    padding: 30px 20px;
+    font-size: 24px;
+}
+
+.accordion input[type="radio"]:checked +label::after {
+    transform: rotate(135deg);
+}
+
+.anotherEmail {
+    margin: 20px 8%;
+    width: 100%;
+    max-width: 990px;
+}
+
+.anotherEmail p {
+    padding-left: 14px;
+    padding-bottom: 5px;
+    color: #808080;
+    position: relative;
+}
+
+.anotherEmail input {
+    width: 100%;
+    max-width: 780px;
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 0;
+    padding: 18px 14px;
+    background: transparent;
+    border-radius: 4px;
+    border: 2px solid #3c3c3c;
+    color: #fff;
+}
+.anotherEmail button {
+    max-width: 180px;
+    width: 100%;
+    padding: 18px 12px;
+    margin-top: 14px;
+    background: #db0001;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.anotherEmail button:hover {
+    background: #db0f2f;
+}
+
+.footer {
+    padding:50px 15% 10px;
+    color: #777;
+}
+
+.footer .headAnchor{
+    color: #777;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
